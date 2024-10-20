@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import backgroundSvg from '../assets/bg.svg'; // Pastikan path ini benar
+import backgroundSvg from '/src/assets/bg.svg'; // Pastikan path ini benar
 
 function Testimonials({ scrollToSection }) {
   const controls = useAnimation();

@@ -3,7 +3,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import Typed from 'typed.js';
 import profileImage from '../assets/rai.png';
-import backgroundSvg from '../assets/bg.svg';
+import backgroundSvg from '/src/assets/bg.svg';
+
 
 function Header({ scrollToSection }) {
   const controls = useAnimation();

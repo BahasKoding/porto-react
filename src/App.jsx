@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import './index.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 // Menggunakan dynamic import untuk lazy loading
 const About = lazy(() => import('./components/About'));
@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/porto-react">
       <div className="App">
         <Navbar scrollToSection={scrollToSection} />
         <Header scrollToSection={scrollToSection} />
